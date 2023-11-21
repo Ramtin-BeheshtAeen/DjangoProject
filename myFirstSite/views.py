@@ -8,3 +8,12 @@ def http_test(request):
 
 def json_test(request):
     return JsonResponse({"title":"Ramtin is a great programmer"})
+
+def home_view(request):
+    return render(request,"index.html")
+
+def contact_view(request):
+    return render(request,"contact.html")
+
+def about_view(request):
+    return render(request, "about.html")
