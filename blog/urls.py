@@ -4,6 +4,6 @@ from blog.views import *
 app_name = "myFirstSite"
 
 urlpatterns = [
-    path('blog', blog_view, name='index'),
-    path('blog/single', blog_single, name='single'),
+    path('blog', blog_home_view, name='index'),
+    path('blog/single', blog_single_view, name='single'),
 ]
